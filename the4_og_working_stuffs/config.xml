@@ -1,0 +1,94 @@
+<?xml version="1.0" ?>
+<config xmlns="http://www.xfa.org/schema/xci/3.0/">
+	<agent name="designer">
+		<!--  [0..n]  -->
+		<destination>pdf</destination>
+		<pdf>
+			<!--  [0..n]  -->
+			<fontInfo/>
+		</pdf>
+	</agent>
+	<present>
+		<!--  [0..n]  -->
+		<pdf>
+			<!--  [0..n]  -->
+			<fontInfo>
+				<embed>1</embed>
+			</fontInfo>
+			<version>1.7</version>
+			<adobeExtensionLevel>11</adobeExtensionLevel>
+			<renderPolicy>client</renderPolicy>
+			<creator>Designer 6.4</creator>
+			<producer>Designer 6.4</producer>
+			<scriptModel>XFA</scriptModel>
+			<interactive>1</interactive>
+			<tagged>1</tagged>
+			<compression>
+				<level>6</level>
+				<compressLogicalStructure>1</compressLogicalStructure>
+				<compressObjectStream>1</compressObjectStream>
+			</compression>
+			<linearized>1</linearized>
+			<silentPrint>
+				<addSilentPrint>0</addSilentPrint>
+				<printerName/>
+			</silentPrint>
+			<viewerPreferences>
+				<duplexOption>simplex</duplexOption>
+				<numberOfCopies>0</numberOfCopies>
+				<printScaling>appDefault</printScaling>
+				<pickTrayByPDFSize>0</pickTrayByPDFSize>
+				<enforce/>
+				<ADBE_JSDebugger>delegate</ADBE_JSDebugger>
+				<ADBE_JSConsole>delegate</ADBE_JSConsole>
+				<addViewerPreferences>0</addViewerPreferences>
+			</viewerPreferences>
+		</pdf>
+		<cache>
+			<macroCache/>
+		</cache>
+		<xdp>
+			<packets>*</packets>
+		</xdp>
+		<common>
+			<log>
+				<to>memory</to>
+				<mode>overwrite</mode>
+			</log>
+			<template>
+				<base>C:\Users\Dima\Downloads\</base>
+			</template>
+		</common>
+		<destination>pdf</destination>
+		<script>
+			<runScripts>server</runScripts>
+		</script>
+		<output>
+			<to>uri</to>
+			<uri>C:\Users\Dima\Downloads\Untitled1.pdf</uri>
+		</output>
+	</present>
+	<acrobat>
+		<acrobat7>
+			<dynamicRender>required</dynamicRender>
+		</acrobat7>
+		<common>
+			<versionControl sourceBelow="maintain"/>
+			<data>
+				<xsl>
+					<uri/>
+				</xsl>
+				<outputXSL>
+					<uri/>
+				</outputXSL>
+			</data>
+			<template>
+				<base>C:\Users\Dima\Downloads\</base>
+				<relevant/>
+				<uri/>
+			</template>
+		</common>
+		<autoSave/>
+		<validate>preSubmit</validate>
+	</acrobat>
+</config>

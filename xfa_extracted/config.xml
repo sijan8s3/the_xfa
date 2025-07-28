@@ -1,0 +1,113 @@
+<?xml version="1.0" ?>
+<config xmlns="http://www.xfa.org/schema/xci/3.0/">
+	<agent name="designer">
+		<!--  [0..n]  -->
+		<destination>pdf</destination>
+		<pdf>
+			<!--  [0..n]  -->
+			<fontInfo/>
+		</pdf>
+	</agent>
+	<present>
+		<!--  [0..n]  -->
+		<pdf>
+			<!--  [0..n]  -->
+			<version>1.7</version>
+			<adobeExtensionLevel>8</adobeExtensionLevel>
+			<renderPolicy>client</renderPolicy>
+			<creator>Designer 6.5</creator>
+			<producer>Designer 6.5</producer>
+			<scriptModel>XFA</scriptModel>
+			<interactive>1</interactive>
+			<tagged>1</tagged>
+			<fontInfo>
+				<embed>0</embed>
+			</fontInfo>
+			<encryption>
+				<encrypt>1</encrypt>
+				<encryptionLevel>128bit</encryptionLevel>
+				<permissions>
+					<accessibleContent>1</accessibleContent>
+					<contentCopy>0</contentCopy>
+					<documentAssembly>1</documentAssembly>
+					<formFieldFilling>1</formFieldFilling>
+					<modifyAnnots>1</modifyAnnots>
+					<print>1</print>
+					<printHighQuality>1</printHighQuality>
+					<change>1</change>
+					<plaintextMetadata>0</plaintextMetadata>
+				</permissions>
+			</encryption>
+			<compression>
+				<level>6</level>
+				<compressLogicalStructure>1</compressLogicalStructure>
+				<compressObjectStream>1</compressObjectStream>
+			</compression>
+			<linearized>1</linearized>
+			<silentPrint>
+				<addSilentPrint>0</addSilentPrint>
+				<printerName/>
+			</silentPrint>
+			<viewerPreferences>
+				<duplexOption>simplex</duplexOption>
+				<numberOfCopies>0</numberOfCopies>
+				<printScaling>appDefault</printScaling>
+				<pickTrayByPDFSize>1</pickTrayByPDFSize>
+				<enforce/>
+				<ADBE_JSDebugger>delegate</ADBE_JSDebugger>
+				<ADBE_JSConsole>delegate</ADBE_JSConsole>
+				<addViewerPreferences>1</addViewerPreferences>
+			</viewerPreferences>
+		</pdf>
+		<common>
+			<log>
+				<to>memory</to>
+				<mode>overwrite</mode>
+			</log>
+			<template>
+				<base>M:\Bus_Activity\GOA_Forms\Forms\_Working Folders\Ministry Update - Chris\</base>
+			</template>
+		</common>
+		<cache>
+			<macroCache/>
+		</cache>
+		<script>
+			<runScripts>server</runScripts>
+		</script>
+		<xdp>
+			<packets>*</packets>
+		</xdp>
+		<destination>pdf</destination>
+		<output>
+			<to>uri</to>
+			<uri>M:\Bus_Activity\GOA_Forms\Forms\_Working Folders\Ministry Update - Chris\ASA12610-25.pdf</uri>
+		</output>
+	</present>
+	<psMap>
+		<font typeface="Calibri" psName="Calibri" weight="normal" posture="normal"/>
+		<font typeface="Calibri" psName="Calibri-Bold" weight="bold" posture="normal"/>
+	</psMap>
+	<acrobat>
+		<acrobat7>
+			<dynamicRender>required</dynamicRender>
+		</acrobat7>
+		<common>
+			<versionControl sourceBelow="maintain"/>
+			<data>
+				<xsl>
+					<uri/>
+				</xsl>
+				<outputXSL>
+					<uri/>
+				</outputXSL>
+			</data>
+			<template>
+				<base>M:\Bus_Activity\GOA_Forms\Forms\_Working Folders\Ministry Update - Chris\</base>
+				<relevant/>
+				<uri/>
+			</template>
+		</common>
+		<autoSave/>
+		<validate>preSubmit</validate>
+	</acrobat>
+</config>

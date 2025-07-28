@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Customer Satisfaction Survey</title>
+  <style>
+    body { font-family: 'Myriad Pro', Arial, sans-serif; margin: 30px; background: #f9f9f9; }
+    .container { background: #fff; padding: 24px; border-radius: 8px; max-width: 900px; margin: 0 auto; box-shadow: 0 2px 10px #ccc;}
+    h1 { text-align: center; font-size: 2em; margin-bottom: 6px; }
+    .company-info { text-align: right; font-size: 0.97em; color: #555; margin-bottom: 26px; }
+    .field-label { font-weight: bold; display: block; margin-bottom: 3px; }
+    .textfield, textarea { width: 100%; font-size: 1em; margin-bottom: 16px; }
+    textarea { min-height: 60px; }
+    .form-actions { display: flex; gap: 16px; margin: 24px 0 0 0; }
+    .form-actions button, .form-actions input[type="submit"] { font-size: 1em; padding: 7px 22px; border-radius: 4px; border: none; background: #3976c5; color: #fff; cursor: pointer; }
+    .form-actions input[type="reset"] { background: #c4c4c4; color: #222; }
+    .form-actions button.print { background: #43a047;}
+    .form-actions button.email { background: #fbc02d; color: #222;}
+    .question-caption { font-weight: bold; margin-bottom: 6px; }
+    .section-title { margin: 22px 0 8px 0; font-size: 1.2em; color: #222;}
+    @media (max-width: 700px) {
+      .container { padding: 3vw; }
+    }
+  </style>
+  <script>
+    function printForm() {
+      window.print();
+    }
+    function emailForm() {
+      // This will open the mail client with a blank email.
+      // To send the filled form, you'd need backend scripting or some JS logic.
+      window.location = 'mailto:example@example.com?subject=Sample subject';
+      return false;
+    }
+  </script>
+</head>
+<body>
+  <div class="container">
+    <h1>Customer Satisfaction Survey</h1>
+    <div class="company-info">
+      <div>Any Company Inc.</div>
+      <div>123 Any Ave</div>
+      <div>Any Town, State</div>
+      <div>Any Country</div>
+      <div>Any ZIP/Postal Code</div>
+      <div>Phone: 111-222-3333 | Fax: 111-222-4444</div>
+      <div>Website: <a href="http://www.example.com" target="_blank">www.example.com</a></div>
+    </div>
+
+    <form method="post" action="https://support-api-service-dev.azurewebsites.net/api/pdf-viewer/SubmitFormSample">
+      <div class="section-title">Customer Information</div>
+
+      <label class="field-label" for="date">Date:</label>
+      <input class="textfield" type="date" id="date" name="Date" placeholder="YYYY/MM/DD">
+
+      <label class="field-label" for="customername">Customer Name:</label>
+      <input class="textfield" type="text" id="customername" name="CustomerName">
+
+      <label class="field-label" for="address">Address:</label>
+      <input class="textfield" type="text" id="address" name="Address">
+
+      <label class="field-label" for="stateprov">State/Province:</label>
+      <input class="textfield" type="text" id="stateprov" name="StateProv">
+
+      <label class="field-label" for="zipcode">Zip/Postal Code:</label>
+      <input class="textfield" type="text" id="zipcode" name="ZipCode">
+
+      <div class="section-title">Respondent Information</div>
+      <label class="field-label" for="respondentname">Respondent's Name:</label>
+      <input class="textfield" type="text" id="respondentname" name="RespondentName">
+
+      <label class="field-label" for="respondentposition">Position:</label>
+      <input class="textfield" type="text" id="respondentposition" name="RespondentPosition">
+
+      <label class="field-label" for="respondentphone">Phone:</label>
+      <input class="textfield" type="tel" id="respondentphone" name="RespondentPhone">
+
+      <div class="section-title">Survey Questions</div>
+      
+      <div>
+        <div class="question-caption">Please list current products / services we've provided:</div>
+        <textarea name="Question1"></textarea>
+      </div>
+      <div>
+        <div class="question-caption">How can we improve the delivery of the products / services we provide you?</div>
+        <textarea name="Question2"></textarea>
+      </div>
+      <div>
+        <div class="question-caption">What are your impressions of the products / services we provide you?</div>
+        <textarea name="Question3"></textarea>
+      </div>
+      <div>
+        <div class="question-caption">How do you perceive us with respect to our competitors?</div>
+        <textarea name="Question4"></textarea>
+      </div>
+      <div>
+        <div class="question-caption">What is your perception of the pricing for the products / services we provide you?</div>
+        <textarea name="Question5"></textarea>
+      </div>
+      <div>
+        <div class="question-caption">In what ways should we improve our products / services, our marketing, or our delivery to you?</div>
+        <textarea name="Question6"></textarea>
+      </div>
+      <div>
+        <div class="question-caption">How can we improve the quality of the products / services we provide you?</div>
+        <textarea name="Question7"></textarea>
+      </div>
+      <div>
+        <div class="question-caption">Any thoughts you’d like to share with our organization on how we can serve you better:</div>
+        <textarea name="Question8"></textarea>
+      </div>
+      
+      <div class="form-actions">
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset Form">
+        <button type="button" class="print" onclick="printForm()">Print Form</button>
+        <button type="button" class="email" onclick="return emailForm()">Submit by Email</button>
+      </div>
+    </form>
+  </div>
+</body>
+</html>
